@@ -8,11 +8,31 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Node",
+"class": "CharacterStateMachine",
+"language": "GDScript",
+"path": "res://nodes/StateMachine.gd"
+}, {
+"base": "Node",
+"class": "State",
+"language": "GDScript",
+"path": "res://nodes/states/States.gd"
+} ]
+_global_script_class_icons={
+"CharacterStateMachine": "",
+"State": ""
+}
+
 [application]
 
 config/name="jam-project"
 run/main_scene="res://Scenario.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/dpi/allow_hidpi=true
 
 [gui]
 
